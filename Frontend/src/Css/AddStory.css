@@ -1,0 +1,136 @@
+/* Import Balsamiq Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page container */
+.Inclusive-addStory-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1.2rem auto;
+    background-color: #1d2951;
+    background-image: linear-gradient(315deg, #1d2951 0%, #dbe7fc 74%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container */
+.addStory-form {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ededf1;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Input fields */
+.addStory-form input#title {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #3a0f4e;
+    outline: none;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.addStory-form input#title:focus {
+    border-bottom-color: #6543df;
+}
+
+/* Story image field */
+.StoryImageField {
+    border: 2px dashed #6543df;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.StoryImageField svg {
+    font-size: 2rem;
+    color: #6543df;
+}
+
+.StoryImageField .txt {
+    margin-top: 10px;
+    color: #6543df;
+    font-size: 1.1rem;
+}
+
+/* Button styles */
+.addStory-btn,
+.dis-btn {
+    width: 100%;
+    padding: 0.9rem;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.addStory-btn {
+    background-color: #0a041f;
+    color: #d7d1d1;
+}
+
+.addStory-btn:hover {
+    background-color: #140739;
+}
+
+.dis-btn {
+    background-color: #070318;
+    color: #130933;
+    opacity: 0.8;
+}
+
+.dis-btn:hover {
+    background-color: #1b1155;
+}
+
+/* Message styles */
+.addStory-form .error_msg,
+.addStory-form .success_msg {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.addStory-form .error_msg {
+    background-color: rgba(245, 72, 72, 0.9);
+    color: white;
+}
+
+.addStory-form .success_msg {
+    background-color: rgba(14, 218, 75, 0.9);
+    color: white;
+}
+
+.addStory-form .success_msg a {
+    color: #73dfdd;
+    font-weight: bold;
+    margin-left: 1rem;
+}
